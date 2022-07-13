@@ -1,0 +1,75 @@
+MODEL:
+  PRETRAIN_CHOICE: 'imagenet'
+  NAME: 'DSwin'
+  PRETRAIN_PATH: '/home/qianwen.qian/model/model_pretrain/swin_tiny_patch4_window7_224.pth'
+  LOSS: ['focal', 'triplet'] # focal, triplet, xent, softmax, cluster, lift, n_parir, track_triplet
+  LOSS_WEIGHT: [1., 1.]
+  IF_PD: 'yes'
+
+INPUT:
+  SIZE_TRAIN: [224, 224]
+  SIZE_TEST: [224, 224]
+  PIXEL_MEAN: [0.5, 0.5, 0.5]
+  PIXEL_MEAN: [0.5, 0.5, 0.5]
+  PROB: 0.5 # random horizontal flip
+  RE_PROB: 0.5 # random erasing
+  PADDING: 10
+
+DATASETS:
+  NAMES: ('VeRi')
+
+DATALOADER:
+  SAMPLER: 'softmax_triplet'
+  NUM_INSTANCE: 16
+  NUM_WORKERS: 4
+  NUM_CAMERAS: 4
+
+SOLVER:
+  OPTIMIZER_NAME: 'AdamW'
+  MAX_EPOCHS: 120
+  BASE_LR: 0.00010
+  
+  MARGIN: 0.3
+
+  TRIPLET_WEIGHT: 1.
+
+  CLS_WEIGHT: 1.
+
+  TRACK_MARGIN: 0.
+  TRACK_WEIGHT: 0.
+
+  CLUSTER_MARGIN: 1.2
+
+  CENTER_LR: 0.5
+  CENTER_LOSS_WEIGHT: 0.0005
+
+  RANGE_K: 2
+  RANGE_MARGIN: 0.3
+  RANGE_ALPHA: 0
+  RANGE_BETA: 1
+  RANGE_LOSS_WEIGHT: 1
+
+  BIAS_LR_FACTOR: 1
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0.0005
+  IMS_PER_BATCH: 64
+
+  STEPS: [40, 70, 100]
+  GAMMA: 0.1
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 10
+  WARMUP_METHOD: 'linear'
+
+  CHECKPOINT_PERIOD: 120
+  LOG_PERIOD: 20
+  EVAL_PERIOD: 20
+
+TEST:
+  IMS_PER_BATCH: 32
+  RE_RANKING: 'no'
+  WEIGHT: "path"
+  NECK_FEAT: 'before'
+  FEAT_NORM: 'yes'
+
+OUTPUT_DIR: "output"

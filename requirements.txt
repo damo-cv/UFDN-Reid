@@ -1,0 +1,80 @@
+absl-py==1.0.0
+Bottleneck==1.3.2
+cached-property==1.5.2
+cachetools==4.2.4
+certifi==2021.10.8
+charset-normalizer==2.0.9
+# Editable install with no version control (ClusterContrast==1.0.0)
+-e /home/qianwen.qian/code/VReid_0916/cluster-contrast-reid-main
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+dataclasses==0.6
+einops==0.3.2
+faiss-gpu==1.7.2
+fonttools==4.25.0
+future==0.18.2
+fvcore==0.1.5.post20211023
+google-auth==2.3.3
+google-auth-oauthlib==0.4.6
+grpcio==1.42.0
+h5py==3.6.0
+idna==3.3
+importlib-metadata==4.8.2
+infomap==1.9.0
+install==1.3.5
+iopath==0.1.9
+joblib==1.1.0
+kiwisolver @ file:///opt/conda/conda-bld/kiwisolver_1638569886207/work
+kmeans-pytorch==0.3
+Markdown==3.3.6
+matplotlib @ file:///tmp/build/80754af9/matplotlib-suite_1634667019719/work
+metric-learn==0.6.2
+mkl-fft==1.3.0
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626179032232/work
+mkl-service==2.4.0
+munkres==1.1.4
+numexpr @ file:///tmp/build/80754af9/numexpr_1618856527787/work
+numpy @ file:///tmp/build/80754af9/numpy_and_numpy_base_1626264701743/work
+oauthlib==3.1.1
+olefile==0.46
+opencv-python==4.5.3.56
+pandas==1.3.4
+Pillow @ file:///tmp/build/80754af9/pillow_1625655818400/work
+portalocker==2.3.2
+prefetch-generator==1.0.1
+protobuf==3.18.0
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+pyparsing @ file:///tmp/build/80754af9/pyparsing_1635766073266/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytorch-ignite==0.4.6
+pytz==2021.3
+PyYAML==5.4.1
+requests==2.26.0
+requests-oauthlib==1.3.0
+rsa==4.8
+scikit-learn==1.0.1
+scipy @ file:///tmp/build/80754af9/scipy_1630606797510/work
+seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+sklearn==0.0
+# Editable install with no version control (SpCL==1.0.0)
+-e /home/qianwen.qian/code/VReid_0916/SpCL-master
+tabulate==0.8.9
+tb-nightly==2.8.0a20211205
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.0
+tensorboardX==2.4
+termcolor==1.1.0
+threadpoolctl==3.0.0
+timm==0.3.2
+torch==1.7.1
+torchaudio==0.7.0
+torchvision==0.8.2
+tornado @ file:///tmp/build/80754af9/tornado_1606942283357/work
+tqdm==4.62.3
+ttach==0.0.3
+typing-extensions @ file:///Users/ktietz/demo/mc3/conda-bld/typing_extensions_1629887998905/work
+urllib3==1.26.7
+Werkzeug==2.0.2
+yacs==0.1.8
+zipp==3.6.0
