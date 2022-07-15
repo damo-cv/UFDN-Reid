@@ -72,10 +72,9 @@ sh experiments/train_res50_UFDN_VehicleID.sh or train_swin_UFDN_VehicleID.sh
 
 ## Trained Models and logs
 
-｜method｜backbone｜dataset｜Result｜log｜model｜
-
-｜UFDN｜Res50｜VeRi-776｜81.5%/96.5%｜[log](https://drive.google.com/file/d/1ynAq-Rm4_yBs2wNXSM1DxkMxgbPvB3xu/view?usp=sharing)｜[model](https://drive.google.com/file/d/1iL0l4VjMwc36XDsgCAuZFdlfQpEW4sej/view?usp=sharing)｜
-
+｜method｜backbone｜dataset｜Result  ｜ log   ｜ model｜
+｜----  | -----   | ------ ｜------ ｜------ ｜------ ｜
+｜UFDN  ｜Res50   ｜VeRi-776｜81.5%/96.5%｜[log](https://drive.google.com/file/d/1ynAq-Rm4_yBs2wNXSM1DxkMxgbPvB3xu/view?usp=sharing)｜[model](https://drive.google.com/file/d/1iL0l4VjMwc36XDsgCAuZFdlfQpEW4sej/view?usp=sharing)｜
 ｜UFDN｜Swin-tiny｜VeRi-776｜80.8%/96.5%｜[log](https://drive.google.com/file/d/13aINxij07svV-Vd9w0j2TbVBXhbkm_qE/view?usp=sharing)｜[model](https://drive.google.com/file/d/1XBN3E8RLHMDFPu2FRK4VlfTKb-TexjKU/view?usp=sharing)｜
 
 
