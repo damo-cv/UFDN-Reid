@@ -379,7 +379,14 @@ class Baseline(nn.Module):
         else:
             # print("evaluate here")
             if self.neck_feat == 'after':
-                return feat
+                # return feat
+                if self.model_name=="PSwin" or self.model_name == 'Pres50':
+                    if self.model_name == 'Pres50' and self.tdeep==0:
+                        return bn_all_feats[0], bn_all_feats[0],bn_all_feats[0]
+                    else:
+                        tmp1=bn_all_feats[0]+torch.cat(bn_all_feats[1:],dim=1)
+                        tmp2=torch.cat(bn_all_feats,dim=1)
+                        return bn_all_feats[0], bn_all_feats[0]+torch.cat(bn_all_feats[1:],dim=1),torch.cat(bn_all_feats,dim=1)
             else:
                 if self.model_name=="PSwin" or self.model_name == 'Pres50':
                     if self.model_name == 'Pres50' and self.tdeep==0:
