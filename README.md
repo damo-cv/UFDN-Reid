@@ -81,3 +81,18 @@ Codebase from [reid-strong-baseline](https://github.com/michuanhaohao/reid-stron
 ## Contact
 
 If you have any question, please feel free to contact us. E-mail: [qianwen2018@ia.ac.cn](qianwen2018@ia.ac.cn) , [haoluocsc@zju.edu.cn](mailto:haoluocsc@zju.edu.cn)
+
+
+## Citation
+
+If you find this code useful for your research, please cite our paper
+
+```
+@InProceedings{Qian_2022_ECCV,
+    author    = {Qian, Wen and Luo, Hao and Peng, Silong and Wang, Fan and Chen, Chen and Li, Hao},
+    title     = {Unstructured Feature Decoupling for Vehicle Re-Identification},
+    booktitle = { European Conference on Computer Vision (ECCV)},
+    month     = {October},
+    year      = {2022},
+}
+```
