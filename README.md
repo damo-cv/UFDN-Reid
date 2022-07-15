@@ -2,6 +2,7 @@
 ![PyTorch >=1.0](https://img.shields.io/badge/PyTorch->=1.6-blue.svg)
 
 # [ECCV2022] Unstructured Feature Decoupling for Vehicle Re-Identification (UFDN)
+Unstructured Feature Decoupling for Vehicle Re-Identification [pdf](https://drive.google.com/file/d/1DT99oMjuiyZZ-pztAcZ5oKvznsmJ-XZV/view?usp=sharing)
 
 ## News
 - 2022.7  We release the code of UFDN.
