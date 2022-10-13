@@ -41,6 +41,7 @@ data
     └── images ..
 
 ```
+Datalist: [VeRi-776](https://drive.google.com/drive/folders/1b-ZmlWWm4N8Ahtc5WAsy4XxmdUqCKl5W?usp=sharing) 
 
 ### Prepare Res50 or Swin Pre-trained Models
 
